@@ -1,0 +1,8 @@
+<div id="pass-chooser">
+    <div>Pass:</div>
+    <select onchange={{action passSelected value="abc"}} name="selected-pass">
+        {{#each passes key="@index" as |pass|}}
+            <option value={{@index}}>{{pass.name}}</option>
+        {{/each}}
+    </select>
+</div>
